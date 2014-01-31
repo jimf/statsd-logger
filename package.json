@@ -1,0 +1,29 @@
+{
+  "name": "statsd-logger",
+  "version": "0.0.0",
+  "description": "Simple statsd server for local development",
+  "main": "statsd_logger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "./bin/statsd-logger",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jimf/statsd-logger"
+  },
+  "keywords": [
+    "statsd"
+  ],
+  "dependencies": {
+    "colors": "*"
+  },
+  "author": "Jim Fitzpatrick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimf/statsd-logger/issues"
+  },
+  "homepage": "https://github.com/jimf/statsd-logger"
+}
