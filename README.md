@@ -1,6 +1,8 @@
 statsd-logger
 =============
 
+[![Dependencies](https://david-dm.org/jimf/statsd-logger.png)](https://david-dm.org/jimf/statsd-logger)
+
 Simple script for listening for [StatsD](https://github.com/etsy/statsd/)
 messages and logging them to the console. This script is meant to be used for
 local development in place of a true StatsD server.
