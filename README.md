@@ -21,7 +21,7 @@ License
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Jim Fitzpatrick
+Copyright (c) 2014-2016 Jim Fitzpatrick
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
