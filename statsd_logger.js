@@ -16,6 +16,8 @@ server.on('message', function(msg, rinfo) {
   var msg_parts = msg.toString().split('\n');
   for (var i = 0; i < msg_parts.length; i++) {
     var parts = msg_parts[i].split(':');
+    // only split once...
+    parts = [parts.shift(), parts.join(":")];
     console.log('StatsD Metric: ' + parts[0].blue + ' ' + parts[1].green);
   }
 });
