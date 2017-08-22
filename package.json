@@ -1,6 +1,6 @@
 {
   "name": "statsd-logger",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Simple statsd server for local development",
   "main": "statsd_logger.js",
   "scripts": {
