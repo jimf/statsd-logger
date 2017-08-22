@@ -4,6 +4,7 @@
   "description": "Simple statsd server for local development",
   "main": "statsd_logger.js",
   "scripts": {
+    "lint": "standard",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": "./bin/statsd-logger",
@@ -25,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/jimf/statsd-logger/issues"
   },
-  "homepage": "https://github.com/jimf/statsd-logger"
+  "homepage": "https://github.com/jimf/statsd-logger",
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
 }
