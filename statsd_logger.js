@@ -13,13 +13,13 @@ server.on('listening', function () {
 })
 
 server.on('message', function (msg, rinfo) {
-  var msgParts = msg.toString().split('\n')
-  for (var i = 0; i < msgParts.length; i++) {
-    var parts = msgParts[i].split(':')
-    // only split once...
-    parts = [parts.shift(), parts.join(':')]
-    console.log('StatsD Metric: ' + parts[0].blue + ' ' + parts[1].green)
-  }
+  msg.toString()
+    .trim()
+    .split('\n')
+    .forEach(function (metric) {
+      var parts = metric.split(':')
+      console.log('StatsD Metric: ' + parts[0].blue + ' ' + parts[1].green)
+    })
 })
 
 server.bind(process.env.PORT || 8125)
