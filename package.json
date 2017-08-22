@@ -5,7 +5,8 @@
   "main": "statsd_logger.js",
   "scripts": {
     "lint": "standard",
-    "test": "tape test.js"
+    "test": "tape test.js",
+    "validate": "npm run lint && npm test"
   },
   "bin": "./bin/statsd-logger",
   "engines": {
