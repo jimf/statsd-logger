@@ -78,3 +78,18 @@ test('server message events - multiple messages', function (t) {
   })
   emitter.emit('message', 'gorets:1|c\ngorets:1|c')
 })
+
+test('server message events - colons within gauge', function (t) {
+  t.plan(1)
+  var emitter = new events.EventEmitter()
+  emitter.bind = function () {}
+  createLogger({
+    server: emitter,
+    logger: {
+      log: function (msg) {
+        t.equal(msg, 'StatsD Metric: ' + 'foo'.blue + ' ' + 'bar:baz|c'.green)
+      }
+    }
+  })
+  emitter.emit('message', 'foo:bar:baz|c')
+})

@@ -21,6 +21,7 @@ module.exports = function (options) {
       .split('\n')
       .forEach(function (metric) {
         var parts = metric.split(':')
+        parts = [parts.shift(), parts.join(':')]
         logger.log('StatsD Metric: ' + parts[0].blue + ' ' + parts[1].green)
       })
   })
